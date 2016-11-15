@@ -7,4 +7,9 @@ describe('ColdBrew#caffeinate', () => {
   before('set up test', () => {
     coldBrew = new ColdBrew()
   })
+
+  it('should keep empty string', () => {
+    expect(coldBrew.caffeinate('')).to.equal('')
+  })
+
 })
