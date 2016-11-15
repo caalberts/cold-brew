@@ -33,4 +33,8 @@ describe('ColdBrew#caffeinate', () => {
     expect(coldBrew.caffeinate('aa')).to.equal('coffee')
     expect(coldBrew.caffeinate('ae')).to.equal('coffee')
   })
+
+  it('should keep contiguous consonants', () => {
+    expect(coldBrew.caffeinate('bc')).to.equal('bc')
+  })
 })
