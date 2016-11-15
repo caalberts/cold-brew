@@ -43,4 +43,10 @@ describe('ColdBrew#caffeinate', () => {
     expect(coldBrew.caffeinate('B')).to.equal('B')
     expect(coldBrew.caffeinate('And')).to.equal('coffeend')
   })
+
+  it('should only replace vowels if more than 30% of the word are vowels', () => {
+    expect(coldBrew.caffeinate('his')).to.equal('hcoffees')
+    expect(coldBrew.caffeinate('tea')).to.equal('tcoffee')
+    expect(coldBrew.caffeinate('bbba')).to.equal('bbba')
+  })
 })
