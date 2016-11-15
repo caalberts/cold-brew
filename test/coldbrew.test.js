@@ -37,4 +37,10 @@ describe('ColdBrew#caffeinate', () => {
   it('should keep contiguous consonants', () => {
     expect(coldBrew.caffeinate('bc')).to.equal('bc')
   })
+
+  it('should be case insensitive', () => {
+    expect(coldBrew.caffeinate('A')).to.equal('coffee')
+    expect(coldBrew.caffeinate('B')).to.equal('B')
+    expect(coldBrew.caffeinate('And')).to.equal('coffeend')
+  })
 })

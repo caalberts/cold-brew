@@ -15,6 +15,6 @@ export default class ColdBrew {
   }
 
   isVowel(letter) {
-    return 'aeiou'.includes(letter)
+    return 'AEIOUaeiou'.includes(letter)
   }
 }
