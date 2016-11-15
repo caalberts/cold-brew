@@ -1,7 +1,7 @@
 {
-  "name": "tdd-small-steps",
+  "name": "cold-brew",
   "version": "1.0.0",
-  "description": "Start TDD with small steps",
+  "description": "Coffee inspired TDD exercises",
   "main": "index.js",
   "author": "Albert Salim <albertlimca@gmail.com>",
   "scripts": {
