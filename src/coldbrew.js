@@ -26,16 +26,10 @@ export default class ColdBrew {
   }
 
   calculateVowelRatio(letters) {
-    let vowels = 0
-    let consonants = 0
-    letters.forEach(letter => {
-      if (this.isVowel(letter)) {
-        vowels += 1
-      } else {
-        consonants += 1
-      }
-    })
+    let vowelCount = letters.reduce((count, letter) => {
+      return this.isVowel(letter) ? count += 1 : count
+    }, 0)
 
-    return vowels / (vowels + consonants)
+    return vowelCount / letters.length
   }
 }
