@@ -19,4 +19,8 @@ describe('ColdBrew#caffeinate', () => {
     expect(coldBrew.caffeinate('o')).to.equal('coffee')
     expect(coldBrew.caffeinate('u')).to.equal('coffee')
   })
+
+  it('should keep consonants', () => {
+    expect(coldBrew.caffeinate('b')).to.equal('b')
+  })
 })

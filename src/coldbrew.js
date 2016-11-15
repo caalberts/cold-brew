@@ -1,5 +1,6 @@
 export default class ColdBrew {
   caffeinate(text) {
-    return text === '' ? text : 'coffee'
+    if (text === '') return ''
+    return 'aeiou'.includes(text) ? 'coffee' : text
   }
 }
