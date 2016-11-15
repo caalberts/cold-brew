@@ -28,4 +28,9 @@ describe('ColdBrew#caffeinate', () => {
     expect(coldBrew.caffeinate('ab')).to.equal('coffeeb')
     expect(coldBrew.caffeinate('ba')).to.equal('bcoffee')
   })
+
+  it('should replace contiguous vowels with a single coffee', () => {
+    expect(coldBrew.caffeinate('aa')).to.equal('coffee')
+    expect(coldBrew.caffeinate('ae')).to.equal('coffee')
+  })
 })
