@@ -1,5 +1,5 @@
 export default class ColdBrew {
   caffeinate(text) {
-    return text === '' ? '' : 'coffee'
+    return text === '' ? text : 'coffee'
   }
 }
