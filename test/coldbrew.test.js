@@ -12,4 +12,7 @@ describe('ColdBrew#caffeinate', () => {
     expect(coldBrew.caffeinate('')).to.equal('')
   })
 
+  it('should replace vowel with coffee', () => {
+    expect(coldBrew.caffeinate('a')).to.equal('coffee')
+  })
 })
