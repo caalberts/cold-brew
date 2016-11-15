@@ -1,6 +1,8 @@
-# TDD Small Steps
+# Cold Brew
 
-TDD exercises written in Javascript with ES2015. Test is run using Mocha with Babel preset in order to accept ES2015 syntax.
+Coffee inspired TDD exercises written in Javascript with ES2015. Test is run using Mocha with Babel preset in order to accept ES2015 syntax.
+
+It's also an attempt to try out Yarn package manager.
 
 ## Installation
 
