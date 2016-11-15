@@ -3,17 +3,18 @@ export default class ColdBrew {
     let letters = text.split('')
 
     let caffeinated = letters.map((letter, index) => {
-      if ('aeiou'.includes(letter)) {
-        if (!'aeiou'.includes(letters[index - 1])) {
-          return 'coffee'
-        } else {
-          return ''
-        }
+      if (this.isVowel(letter)) {
+        let previousLetter = letters[index - 1]
+        return this.isVowel(previousLetter) ? '' : 'coffee'
       } else {
         return letter
       }
     })
 
     return caffeinated.join('')
+  }
+
+  isVowel(letter) {
+    return 'aeiou'.includes(letter)
   }
 }
